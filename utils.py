@@ -34,7 +34,7 @@ def write_record_into_stg_table(id, uid, strain, cannabinoid_abbreviation, canna
                                 health_benefit, category, type, buzzword, brand):
     with DBHandler(CON_PARAMS) as cursor:
         cursor.execute(f"""
-        INSERT INTO rdv.test_table (
+        INSERT INTO stg.test_table (
                         id, 
                         uid, 
                         strain, 
