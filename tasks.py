@@ -19,7 +19,7 @@ def data_recording():
 @task
 def insert_in_bd():
     data = {'data':'task_instance.xcom_pull(task_ids="data_recording"}}'}
-    for row in data[data]:
+    for row in data['data']:
         write_record_into_stg_table(
             id=row['id'],
             uid=row['uid'],
@@ -34,3 +34,6 @@ def insert_in_bd():
             buzzword=['buzzword'],
             brand=['brand']
         )
+
+
+
